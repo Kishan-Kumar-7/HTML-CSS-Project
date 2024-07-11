@@ -4,3 +4,10 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
+.My_Style {
+    background-color: red;
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: small;
+}
