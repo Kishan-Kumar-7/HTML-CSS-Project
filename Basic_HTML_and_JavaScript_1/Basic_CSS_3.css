@@ -1,0 +1,38 @@
+body{
+    background-color: gray;
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: yellow;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+table{
+    margin: auto;
+    width: 70%;
+}
+tr,th {
+    border: 1px solid blanchedalmond;
+    text-align: center;
+    background-color: brown;
+    color: blanchedalmond;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+tr,td {
+    border: 1px solid blanchedalmond;
+    text-align: left;
+    background-color: blanchedalmond;
+    color: brown;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+tr,td:hover{
+    color: black;
+    background-color:teal;
+}
+h3{
+    text-align: center;
+    background-color: black;
+    color: yellow;
+    font-style: italic;
+}
