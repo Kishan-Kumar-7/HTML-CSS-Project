@@ -1,0 +1,26 @@
+body{
+    background-color: #004a7c;
+}
+#main1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: #004a7c;
+    color: #fafafa;
+}
+#heading{
+    width: 80%;
+    margin: auto;
+}
+#form1{    
+    margin: auto;
+    padding-top: 10px;
+    border-radius: 50px;
+    width: 50%;
+    height: 120px;
+    background-color: #fafafa;
+    color: #004a7c;
+}
+#form1:hover{
+    box-shadow: 0px 0px 50px aqua;
+}

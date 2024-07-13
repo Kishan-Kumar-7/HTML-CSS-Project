@@ -1,0 +1,18 @@
+.main_style{
+    font-size: larger;
+    text-shadow: 1px 1px aqua;
+}
+ol{
+    list-style-type: upper-roman ;
+    font-size: large;
+    color:aquamarine ;
+    text-shadow: 1px 1px black;
+}
+ul{
+    color:gold;
+    list-style-type:disc;
+    text-shadow: none;
+}
+*{
+    background-color: dimgray;
+}
