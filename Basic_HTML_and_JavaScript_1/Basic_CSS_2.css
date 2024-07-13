@@ -1,6 +1,15 @@
 p {
-    color: snow;
-    background-color: black;
+    font-size: larger;
     font-weight: bold;
-    text-align: center;
+    
+}
+p:hover{
+    text-shadow: 3px 3px gray;
+}
+ol{
+    list-style-type: upper-roman;
+}
+
+ul{
+    list-style-type: square;
 }
