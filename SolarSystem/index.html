@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Effecting-images-with-CSS/photo-effect.css">
+    <link rel="stylesheet" href="./CSS/shared.CSS">
     <title>SolarSystem</title>
     <link rel="shortcut icon" href="./Image/icon/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <!--Nav-->
 <nav>
-    <div>
-        <div>
-            <ul>
+    <div class="wrap">
+        <div class="menu-container">
+            <ul class="menu">
                 <a href="#home" id="link"><li>Home</li></a>
                 <a href="#gallery" id="link"><li>GALLERY</li></a>
-                <a href="#contactus" id="link"><li>Contact Us</li></a>
+                <a href="#contact" id="link"><li>Contact Us</li></a>
             </ul>
         </div>
     </div>
@@ -24,18 +24,18 @@
 
 <!--HOME-->
 <div id="home">
-    <div>
-        <div>
-            <span>The Solar System</span>
+    <div class="container">
+        <div class="text-center">
+            <span class="head-main">The Solar System</span>
         </div>
     </div>
 </div>
 <!--END HOME-->
 <!--Gallary-->
-<section>
-    <div id="gallery">
+<section id="gallery">
+    <div class="container">
         <h1>Gallary</h1>
-        <div>
+        <div class="flex-container">
             <!--Photo-Container 1-->
             <div class="Photo-Container">
                 <div class="photo">
@@ -140,13 +140,18 @@
 </section>
 <!--End Gallary-->
 <!--Contact Us-->
-<section>
-    <div id="contactus">
-        <div>
-            <h1>Contact US</h1>
-            <div>
-                <h2><span>Please Contact Us With Your Basic Information.</span></h2>
-                <div>
+<section id="contact">
+    <div class="container">
+        <div class="heading-padding">
+            <h1 class="heading-padding">Contact US</h1>
+            <div class="contactus">
+                <h2>
+                    <span>Too Get More Information From Us</span>
+                </h2>
+                <p class="rsvp-text">
+                    Please Contact Us With Your Basic Information.
+                </p>
+                <div class="form-rvsp">
                     <form action="" method="post">
                         <input type="text" class="rvsp" value="First Name">
                         <input type="text" class="rvsp" value="Last Name">
@@ -155,8 +160,8 @@
                         <div class="form-spacer">
                             <label class="terms">Terms and Conditions</label>
                         </div>
-                        <div>
-                            <input type="submit" value="submit">
+                        <div class="submit">
+                            <input type="submit" value="Submit">
                         </div>
                     </form>
                 </div>
@@ -168,7 +173,7 @@
 <!--End Contact Us-->
 
 <!--Footer-->
-<div>
+<div id="footer">
     www.solarsystem.space &nbsp;|&nbsp; &copy;2024
 </div>
 <!--End Footer-->
