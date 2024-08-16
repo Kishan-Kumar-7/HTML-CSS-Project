@@ -33,8 +33,8 @@
                     The Amusement Park
                 </span>
             </div>
-            <div>
-                <h2>Choose your Rides</h2>
+            <div class="main-text">
+                <h2><span>Choose your Rides</span></h2>
                 <p>We will Provide You Your Best Ride Experiance</p>
                 <p>Only Pay For What You Book</p>
             </div>
@@ -146,54 +146,60 @@
                     </div>
                 </div>
                 <!--End Photo Container 9-->
-            <!--End of Photo Gallary-->
-            <!--Video Gallary-->
-            <div id="videos">
-                <div class="container">
-                    <h1>--Video Gallary--</h1>
-                    <div class="video-box">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PQ1UY6xoc3M?si=4AWs4uYAhYjl8Pi_" title="Amusement Park" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <!--End of Video Gallary-->
-            <!--Contact Us Form-->
-            <div id="contact">
-                <div>
-                    <h1>Contact Us</h1>
-                    <p>Please Fill This Form, Our Team Will Contact You Soon</p>
-                    <form action="" method="post">
-                        First Name :<input type="text" name="First Name" id="" value="Please Type Here..."><br><br>
-                        Last Name : <input type="text" name="First Name" id="" value="Please Type Here..."><br><br>
-                        Mobile Number : <input type="text" name="First Name" id="" value="Please Type Here..."><br><br>
-                        Email Address : <input type="text" name="First Name" id="" value="Please Type Here..."><br><br>
-                        Visiting Date : <input type="text" name="First Name" id="" value="Please Type Here..."><br><br>
-                        Commets : <input type="text" name="First Name" id="" value="Please Type Here..."><br><br>
-                        
-                        <input type="submit" value="Submit"><br><br>
-                    </form>
-                </div>
             </div>
         </div>
     </section>
     <!--End of Main Section-->
-    <!--Footer-->
-    <footer>
+    <!--End of Photo Gallary-->
+    <!--Video Gallary-->
+    <section id="videos">
         <div>
-            <div>
-                <nav>
-                    <a href="#home" id="link">Home</a> |
-                    <a href="#photos" id="link">Photo Gallary</a> |
-                    <a href="#videos" id="link">Video Gallary</a> |
-                    <a href="#contact" id="link">Contact Us</a>
-                </nav>
-            </div><hr>
-
+            <div class="container">
+                <h1>Video Gallary</h1>
+                <div class="video-box">
+                    <iframe width="1024" height="600" src="https://www.youtube.com/embed/PQ1UY6xoc3M?si=4AWs4uYAhYjl8Pi_" title="Amusement Park" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
+    </section>
+<!--End of Video Gallary-->
+<!--Contact Us Form-->
+    <section id="contact">
+        <div class="container">
+            <div class="heading-padding">
+                <h1 class="heading-padding">Contact Us</h1>
+                <div class="contactus">
+                    <h2>
+                        <span>Please Fill This Form</span>
+                    </h2>
+                    <p>Our Team Will Contact You Soon</p>
+                    <div>
+                        <form action="" method="post">
+                            <input type="text" name="First Name" id="" value="First Name">
+                            <input type="text" name="Last Name" id="" value="Last Name">
+                            <input type="text" name="Mobile Number" id="" value="Mobile Number">
+                            <input type="email" name="Email Address" id="" value="Email Address">
+                            <input type="date" name="Visiting Date" id="" value="Visiting Date">
+                            <input type="text" name="Commets" id="" value="Commets">   
+                            <div class="form-spacer">
+                                <label for="terms" class="terms">Terms & Conditions</label>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!--Footer-->
+    <div id="footer">
         <div>
             www.amusementpark.fun &nbsp;|&nbsp; &copy;2022
         </div>
-    </footer>
+    </div>
     <!--End of Footer-->
 </body>
 </html>
