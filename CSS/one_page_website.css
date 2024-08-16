@@ -142,6 +142,9 @@ section {
     height: 100%;
     width: 100%;
     position: absolute;
+    /*This Ensures that the images cannot
+        render outside of their container
+        without forcing any scrollbars*/
     overflow: hidden;
     top: 0;
     left: 0;
@@ -151,9 +154,13 @@ section {
 .menu-container {
     max-height: 340px;
     margin: 0px auto;
+    /* top:0;
+        left:0;
+        position: absoltue; */
+    /*to the top edge of the screen*/
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 10;
 }
 
 /*-----------------------------------
@@ -186,6 +193,7 @@ section {
     border: 10px #000 double ;
     border-radius: .5em;
     padding: 20px;
+    z-index: 100;
 }
 
 .head-sub-main {
@@ -201,6 +209,38 @@ section {
     padding: 50px 20px 10px 20px;
     border: 1px dotted #000;
     padding: 5px;
+}
+
+.main-text h2 {
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    color: #DC143C;
+    font-weight: 500;
+    font-size: 1.3em;
+    letter-spacing: 0pt;
+    word-spacing: 0pt;
+}
+
+.main-text h2 span {
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    color: #FFFF00;
+    font-weight: 900;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: 0.4pt;
+    word-spacing: 0.3pt;
+}
+
+.main-text p {
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFF00;
+    width: 50%;
+    margin: 0px auto;
 }
 
 /*-----------------------------------
@@ -280,6 +320,7 @@ p {
     right: 0;
     padding: 20px 0px 20px 0px;
     justify-content: center;
+    /*For centering text inside .photo*/
     background-color: rgba(0, 0, 0, .1);
 }
 
@@ -315,5 +356,179 @@ p {
 }
 
 /*-----------------------------------
-    Photo Overlay Transitions
+    Video Styles
 -----------------------------------*/
+#videos{
+    width: 70%;
+    height: 700px;
+    background-color: #FF7700BB;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 10px; 
+}
+#videos .container{
+    width: 100%;
+    margin: 610;
+}
+.video-box {
+    width: 100%;
+    height: 600px;
+    border: 5px groove #808080;
+}
+iframe{
+    width: 100%;
+    height: 600px;
+}
+/*-----------------------------------
+    Contact Us Styles
+-----------------------------------*/
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px auto;
+    background-color: #DC143CBB;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5), 2px 2px 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+#contact{
+    background-color: #FF7700BB;
+}
+
+.contactus{
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px auto;
+    background-color: #FFF900;
+    box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, .5), 1px 2px 10px 0 rgba(0, 0, 0, .5);
+}
+
+.contactus h2 {
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    color: #DC143C;
+    font-weight: 500;
+    font-size: 1.3em;
+    letter-spacing: 0pt;
+    word-spacing: 0pt;
+}
+
+.contactus h2 span {
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    color: #DC143C;
+    font-weight: 900;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: 0.4pt;
+    word-spacing: 0.3pt;
+}
+.contactus p {
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    color: #DC143C;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.contactus form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #FFFF00;
+    padding: 12px 12px;
+    width: 70%;
+    border: 3px solid #DC143C;
+    margin: 2% auto;
+    border-radius: 10px;
+    background-color: #FF7700BB;
+    box-shadow: 2px 3px 3px 0 rgba(0, 0, 0, .5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contactus input {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    color: #FFFF00;
+    border: 1px solid #DC143C;
+    margin: 10px 1em;
+    border-radius: 10px;
+    background-color: #DC143C;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .8);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contactus input:hover {
+    color: #DC143C;
+    background-color: #FFF900;
+    box-shadow: 0 0 20px rgb(0, 0, 255, .8);
+    border: 1px solid #FFF900;
+}
+
+.form-spacer {
+    padding: 30px 40px;
+}
+
+.terms {
+    margin: 30px 1px 0px 0px;
+    margin-top: 13%;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: #FFFF00BB;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
+}
+
+.terms:hover{
+    color: #DC143C ;
+    text-decoration: underline;
+}
+
+.submit input {
+    background-color: #FFF900;
+    color: #DC143C;
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 18px;
+    /*transition: border-color 0.3s color 0.3s backgraund-color 0.3s;*/
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.submit input:hover{
+    color: #FFF900;
+    background-color: #DC143C;
+    box-shadow: 1px 2px 15px 0 rgba(0, 0, 0, .5);
+    border: none;
+}
+
+/*---------------------------------------------------------
+    Footer Styles
+---------------------------------------------------------*/
+#footer {
+    background-color: #000;
+    color: #FFFF00;
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+}
