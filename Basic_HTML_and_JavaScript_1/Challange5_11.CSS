@@ -1,0 +1,15 @@
+@media all and (max-width:600px) and (min-width:200px) {
+    .container {
+            background-color: #0000DD;
+        }
+}
+@media all and (max-width:1200px) and (min-width:600px){
+    .container{
+        background-color: #DD0000;
+    }
+}
+@media (min-width:1200px){
+.container{
+    background-color: #00DD00;
+}
+}
