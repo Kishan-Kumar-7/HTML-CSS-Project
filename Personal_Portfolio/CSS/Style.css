@@ -98,6 +98,7 @@ img {
     filter: blur(2px) grayscale(75%); /* this will blur our images 2px and rids our images 75% of their color*/
     border-radius: 10px; /* give images rouded corners*/
     max-width: 100%;
+    width: auto;
     height: 340px; /* sets the hight of all images*/
     display: block; /* by specifiying display block we ensure our images are able to be centered*/
     margin: 0px auto 0px auto; /* this centers all images in x axis*/
@@ -108,9 +109,8 @@ img {
 img:hover {
      filter: blur(0px) grayscale(0%); /*this will bring colors back to images and remove blur */
     transition: transform 2s; /* transition last 2 seconds*/
-    transform: scale(1.2); /* image are increse slightly when hovered*/
+    transform: scale(1.1); /* image are increse slightly when hovered*/
 }
-
 /* Styling for Footer Element*/
 footer{
     padding: 1%;
