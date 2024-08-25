@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background: url(../Image/00_Solar_System.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex; /* this sets display to flex*/
+    align-items: center; /* this center items*/
+    justify-content: center; /* this center everything*/
+}
+
+.container{
+    height: 300px;/*this fix the height of container*/
+    display: flex; /* this set everythin next to eachother*/
+    flex-wrap: nowrap;/* this make sure nothing is going in second line*/
+    justify-content: start;
+}
+
+.cards{
+    width: 70px;
+    border-radius: 2rem;
+    background-size:cover;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 20px;
+    display: flex;
+    align-items: flex-end;
+    transition: 1s cubic-bezier(.28,-0.03,0,0.99);
+    box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.cards > .row > .icon{
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    border-radius: 50%;
+    width: 70px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 ;
+    font-size: 30px;
+}
+
+.cards > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 500px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .5s;
+    transition: all .5s ease-in-out;
+    font-size: 20px;
+    text-align: center;
+}
+
+.description p{
+    color: #fff;
+    padding-top: 5px;
+}
+
+.description h4{
+    text-transform: uppercase;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked+label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important; 
+}
+
+.cards[for="P1"]{
+    background-image: url(../Image/01_Sun.jpg);
+}
+
+.cards[for="P2"] {
+    background-image: url(../Image/02_Mercury.jpg);
+}
+
+.cards[for="P3"] {
+    background-image: url(../Image/03_Venus.jpg);
+}
+
+.cards[for="P4"] {
+    background-image: url(../Image/04_Earth.jpg);
+}
+
+.cards[for="P5"] {
+    background-image: url(../Image/05_Mars.jpg);
+}
+
+.cards[for="P6"] {
+    background-image: url(../Image/06_Jupiter.jpg);
+}
+
+.cards[for="P7"] {
+    background-image: url(../Image/07_Saturn.jpg);
+}
+
+.cards[for="P8"] {
+    background-image: url(../Image/08_Uranus.jpg);
+}
+
+.cards[for="P9"] {
+    background-image: url(../Image/09_Neptune.jpg);
+}
