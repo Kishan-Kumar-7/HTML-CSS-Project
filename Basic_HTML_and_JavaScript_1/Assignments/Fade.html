@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/Fade.css">
+    
+    <title>Fade</title>
+</head>
+<body>
+    <script>
+        document.body.classList.add('fade-out');
+    </script>
+    <div class="container">
+        <div class="fade"><h2>This text will fade on click.</h2></div>
+        <div class="nofade">This text will remain.</div>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded',()=>{
+            document.body.classList.remove('fade-out');
+        });
+    </script>
+</body>
+</html>

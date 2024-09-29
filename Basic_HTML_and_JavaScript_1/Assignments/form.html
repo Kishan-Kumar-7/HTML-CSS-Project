@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./CSS/form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <h1>Customer Information Form</h1>
+            <div class="form">
+                <form name="custForm">
+                    <label for="firstName">First Name</label><br>
+                    <input type="text" name="fname" placeholder="First Name...."><br>
+                    <label for="lastName">Last Name</label><br>
+                    <input type="text" name="lname" placeholder="Last Name...."><br>
+                    <label for="mobile">Contact Number</label><br>
+                    <input type="tel" name="tele" placeholder="Mobile Number...."><br>
+                    <label for="email">Email Address</label><br>
+                    <input type="email" name="email" placeholder="Email Address...."><br>
+                    <br>
+                    <input type="button" class="btn" id="reset" value="Reset">
+                    <input type="button" class="btn" value="Submit" onclick="MyFormVali();">
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./script/form.js" defer></script>
+</body>
+</html>
