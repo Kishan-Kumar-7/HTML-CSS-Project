@@ -4,11 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/popup-form.css">
     <title>Popup Form</title>
 </head>
 
 <body>
+    <button class="open-button" onclick="openForm();">Open Form</button>
 
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container"></form>
+        <h1>User Login</h1>
+
+        <label for="idEmail"><b>User Login / Email</b></label>
+        <input type="text" name="userid" placeholder="Enter User ID or Email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm();">Close</button>
+    </div>
+    <script src="./script/popup-form.js" defer></script>
 </body>
 
 </html>
