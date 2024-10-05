@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/AutoSlide.css">
+    <script src="./script/AutoSlide.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+    <title>Automatic SlideShow</title>
+</head>
+<body>
+    <div id="slideshow">
+        <div>
+            <img src="./image/01_Sun.jpg" alt="Sun">
+        </div>
+        <div>
+            <img src="./image/02_Mercury.jpg" alt="">
+        </div>
+        <div>
+            <img src="./image/03_Venus.jpg" alt="">
+        </div>
+        <div>
+            <img src="./image/04_Earth.jpg" alt="">
+        </div>
+        <div>
+            <img src="./image/05_Mars.jpg" alt="">
+        </div>
+        <div>
+            <img src="./image/06_Jupiter.jpg" alt="">
+        </div>
+        <div>
+            <img src="./image/07_Saturn.jpg" alt="">
+        </div>
+        <div>
+            <img src="./image/08_Uranus.jpg" alt="">
+        </div>
+        <div>
+            <img src="./image/09_Neptune.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        $("#slideshow>div:gt(0)").hide();
+
+        setInterval(function(){
+            $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+        }, 3000);
+    </script>
+</body>
+</html>
