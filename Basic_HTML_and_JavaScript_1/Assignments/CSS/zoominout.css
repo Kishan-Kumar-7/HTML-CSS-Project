@@ -1,0 +1,15 @@
+.container img{
+    width: 500px;
+    margin-top: 200px;
+    cursor: zoom-in;
+    transition: transform 1s ease;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox]:checked~ label>img{
+    transform: scale(2);
+    cursor: zoom-out;
+}
